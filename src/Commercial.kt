@@ -11,9 +11,9 @@ open class Commercial (var propertyName: String,
     var weeklyCharge: Double = 00.00
 
     fun calculate(squareFootage: Double, multipleProperty: Int){
-        weeklyCharge = squareFootage * 5
+        weeklyCharge = (squareFootage * .001) * 5
         if (multipleProperty == 1){
-            weeklyCharge = (weeklyCharge * .9)}
+            weeklyCharge = ((weeklyCharge * .001) * .9)}
         println("Property Name: $propertyName")
         println("Customer Name: $customerName")
         println("Customer Phone Number: $customerPhone")
