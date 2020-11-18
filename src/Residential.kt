@@ -10,10 +10,10 @@ open class Residential (customerName: String,
     var weeklyCharge: Double = 00.00
 
     fun calculate(senior: Int){
-        weeklyCharge = squareFootage * 6
+        weeklyCharge = ((squareFootage * .001) * 6)
         var seniorText: String = "No"
         if (senior == 1){
-            weeklyCharge = (weeklyCharge * .85)
+            weeklyCharge = ((weeklyCharge * .001) * .85)
             seniorText = "Yes"}
         println("Customer Name: $customerName")
         println("Customer Phone Number: $customerPhone")
